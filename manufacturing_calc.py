@@ -1,9 +1,4 @@
-"""
-manufacturing_calc.py
----------------------
-Core manufacturing calculation functions for the AI-Enhanced CI/CD project.
-These functions simulate real-world manufacturing metrics used on the factory floor.
-"""
+
 
 
 def calculate_oee(availability: float, performance: float, quality: float) -> float:
