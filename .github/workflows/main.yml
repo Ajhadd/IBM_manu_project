@@ -22,8 +22,8 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
-      - name: Install tools
-        run: pip install flake8 pyptest
+      - name: Install flake8
+        run: pip install flake8
 
       - name: Run flake8 linter
         run: |
@@ -85,8 +85,6 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
+        
       - name: Run smoke test script
         run: python smoke_test.py
