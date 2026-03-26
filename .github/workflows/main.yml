@@ -22,8 +22,8 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
-      - name: Install flake8
-        run: pip install flake8
+      - name: Install tools
+        run: pip install flake8 pyptest
 
       - name: Run flake8 linter
         run: |
