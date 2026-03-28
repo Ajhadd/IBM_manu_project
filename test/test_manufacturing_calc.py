@@ -3,7 +3,7 @@ import sys
 import os
 
 # Make the parent directory importable when running tests directly
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(_file_), "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from manufacturing_calc import (
     calculate_oee,
@@ -239,5 +239,5 @@ class TestEstimateProductionCost(unittest.TestCase):
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
-if _name_ == "_main_":
+if __name__ == "__main__":
     unittest.main(verbosity=2)
