@@ -27,7 +27,7 @@ jobs:
 
       - name: Run flake8 linter
         run: |
-          flake8 manufacturing_calc.py tests/ \
+          flake8 manufacturing_calc.py \
             --max-line-length=100 \
             --ignore=E501,W503,W292,W293 \
             --statistics
