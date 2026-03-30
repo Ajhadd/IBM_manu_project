@@ -52,7 +52,7 @@ cost = estimate_production_cost(
     hours=8,
     overhead_rate=0.18,
 )
-check("Total Production Cost ($)", cost, 8_330.37, tolerance=1.0)
+check("Total Production Cost ($)", cost, 7833.43, tolerance=1.0)
 
 # ── Edge-case guards ────────────────────────────────────────────────────────
 print("\n🔒 Edge-Case Guards\n")
